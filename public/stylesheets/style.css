@@ -1,0 +1,200 @@
+body{
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('../assets/blue.jpg');
+    background-position:center top;
+}
+
+#main {
+	margin: auto;
+	text-align: center;
+	color: white;
+	font-size: 1em;
+	font-family: "Consolas";
+}
+
+#seqCtrlKeys, #seqCtrl{
+	display: block;
+}
+
+.slot {
+	height: 20px;
+	width: 3px;
+	display: inline-block;
+	padding: 15px;
+	margin: 2px;
+	font-size: 15px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.slot-on {
+	background-color: rgb(0,128,128);
+	opacity: 0.6;
+}
+
+.slot-off {
+	background-color: cyan;
+	-webkit-box-shadow: 0px 0px 4px 4px rgba(180,255,255,0.75);
+	-moz-box-shadow: 0px 0px 4px 4px rgba(180,255,255,0.75);
+	box-shadow: 0px 0px 4px 4px rgba(180,255,255,0.75); 
+}
+
+.grid {
+	height: 20px;
+	width: 8px;
+	display: inline-block;
+	padding: 15px;
+	margin: 2px;
+	font-size: 15px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.grid-on {
+	background-color: lime;
+	-webkit-box-shadow: 0px 0px 4px 4px rgba(140,255,140,0.5);
+	-moz-box-shadow: 0px 0px 4px 4px rgba(140,255,140,0.5);
+	box-shadow: 0px 0px 4px 4px rgba(140,255,140,0.5);
+}
+
+.grid-off {
+	background-color: DarkGreen;
+	opacity: 0.8;
+}
+
+.seq-grid {
+	height: 0px;
+	width: 8px;
+	display: inline-block;
+	padding: 4px 15px 4px 15px;
+	margin: 2px;
+	font-size: 15px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.seq-grid-self {
+	background-color: white;
+	-webkit-box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+	-moz-box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+	box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+}
+
+.seq-grid-on {
+	background-color: gold;
+}
+
+.seq-grid-off {
+	background-color: grey;
+	opacity: 0.8;
+}
+
+.key {
+	height: 20px;
+	width: 8px;
+	display: inline-block;
+	padding: 15px;
+	margin: 2px;
+	font-size: 15px;
+	border: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+.key-oct {
+	background-color: lime;
+	opacity: 0.8;
+}
+
+.key-b {
+	background-color: black;
+	opacity: 0.6;
+}
+
+.key-w {
+	background-color: white;
+	opacity: 0.6;
+}
+
+.key-on {
+	background-color: gold;
+	-webkit-box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+	-moz-box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+	box-shadow: 0px 0px 4px 4px rgba(255,255,255,0.5);
+}
+
+.patch {
+	display: inline-block;
+	height: 2px;
+	width: 60px;
+	padding: 15px;
+	margin: auto;
+	font-size: 0.5em;
+	text-align: center;
+	border: solid;
+	border-width: 3px;
+	border-color: black;
+	color: white;
+	opacity: 0.6;
+}
+
+.patch-off {
+	opacity: 0.4;
+}
+
+.patch-on {
+	opacity: 1;
+}
+
+.patch[seq="0"] {
+	background-color: cyan;
+}
+
+.patch[seq="1"] {
+	background-color: magenta;
+}
+
+.patch[seq="2"] {
+	background-color: orange;
+}
+
+.patch[seq="3"] {
+	background-color: pink;
+}
+
+
+#logout {
+	height: 10px;
+	width: 60px;
+	padding: 15px;
+	margin: auto;
+	font-size: 0.5em;
+	text-align: center;
+	border: solid;
+	border-color: black;
+	background-color: red;
+	color: white;
+}
+
+#test {
+	height: 10px;
+	padding: 15px;
+	width: 200px;
+	margin: auto;
+	font-size: 0.5em;
+	text-align: center;
+	border: none;
+	background-color: white;
+	color: white;
+	opacity: 0.8;
+}
+
+#bpm-num {
+	display: inline-block;
+	margin: 6px;
+	padding-bottom: 3px;
+	color: white;
+	font-size: 2em;
+}
