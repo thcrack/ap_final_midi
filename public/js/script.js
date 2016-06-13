@@ -1,5 +1,6 @@
-var socket = io.connect('http://localhost:3001');
+var socket = io.connect('http://10.232.106.34:3001/');
 var slot = -1;
+var MAX_VOICES = 1;
 var patchSwitch = 0;
 var octSwitch = 0;
 var cc = 0;
@@ -87,7 +88,7 @@ socket.on('keyCall', function(data){
 			
 			var success = false;
 			
-			for(var j = 0; j < 4; j++){
+			for(var j = 0; j < MAX_VOICES; j++){
 				if(data[patchSwitch][slot][j] == ((58+i)+12*octSwitch) ){
 					$('#seqCtrlKeys').append('<div class="key key-on" seq="' + i + '"></div>');
 					success = true;
@@ -111,7 +112,7 @@ socket.on('keyCall', function(data){
 		}
 		
 		$('#seqCtrlKeys').append('<div class="key key-oct" id="octUp" seq="15"></div>');
-		$('#octUp').css("opacity",0.5 + 0.25 * Math.max(0,octSwitch));
+		$('#octUp').css("opacity",0.2 + 0.4 * Math.max(0,octSwitch));
 		$('.key').click(function(e){
 			var seqNo = parseInt($(this).attr('seq'));
 			console.log(typeof(octSwitch));

@@ -146,6 +146,7 @@ body{
 
 .patch-on {
 	opacity: 1;
+	border-color: lime;
 }
 
 .patch[seq="0"] {
@@ -191,10 +192,15 @@ body{
 	opacity: 0.8;
 }
 
-#bpm-num {
+#bpm-num, #swing-num {
 	display: inline-block;
 	margin: 6px;
 	padding-bottom: 3px;
 	color: white;
 	font-size: 2em;
+}
+
+#bpmChanger, #swingChanger{
+	display: inline-block;
+	margin: 15px;
 }
